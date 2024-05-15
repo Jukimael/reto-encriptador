@@ -1,0 +1,166 @@
+body{
+    background-color: #F3F5FC;
+}
+header{
+    width: 120px;
+    height: 48px;
+    margin: 40px 0 0 40px;
+}
+
+.area{
+    width: 95%;
+    margin: 0 auto;
+    padding: 3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.areaTexto{
+    margin-left: 320px;
+    font-size: 32px;
+    color: #0A3871;
+    background:#F3F5FC;
+    border: none;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.advertencia{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.interaccion{
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+.interaccion input{
+    width: 328px;
+    padding: 24px;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.boton-encriptar{
+    color: #FFFFFF;
+    background-color: #0A3871;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.boton-desencriptar {
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.consola{
+    height: 780px;
+    width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0px 24px 32px -8px #00000014;
+    text-align: center;
+}
+
+.muñeco{
+    margin-top: 175px;
+}
+
+.aviso{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.boton-copiar{
+    width: 290px;
+    padding: 18px;
+    margin: 660px 0 0 60px;
+    font-size: 15px;
+    border: 1px solid #0A3871;
+    border-radius: 20px;
+    color: #0A3871;
+    background: white;
+    cursor: pointer;
+    display: none;
+}
+
+.texto{
+    padding: 0 10px;
+    margin-left: 30px;
+}
+
+@media screen and (max-width:1024px) {
+    header{
+        margin: 0;
+    }
+
+    .area{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .areaTexto{
+        margin-left: 0;
+        width: 680px;
+    }
+
+    .consola{
+        height: auto;
+        width: 680px;
+        margin-top: 60px;
+    }
+    
+    .muñeco{
+        display: none;
+    }
+
+    .boton-copiar{
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    main{
+        margin-left: 100px;
+    }
+
+    header {
+        margin: 0;
+    }
+
+    .area{
+        width: 375px;
+        margin-left: 220px;
+    }
+
+    .areaTexto{
+        width: 320px;
+    }
+    
+    .boton-encriptar{
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .consola{
+        height: auto;
+        width: 360px;
+        margin-top: 60px;
+        margin-right: 370px;
+    }
+
+    .boton-copiar{
+        width: 280px;
+    }
+}

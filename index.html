@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>EncriptoGuard</title>
+    </head>
+    <body>
+        <header>
+            <h1><img src="imagenes/Logo.png" alt="logo de alura"></h1>
+        </header>
+
+        <main>
+            <section class="area">
+                <div class="entrada">
+                    <textarea cols="55" rows="17" placeholder="Ingrese texto aquí" class="areaTexto" onkeypress="return ' áéíóúabcdefghijklmnñopqrstuvwxyz'.includes(event.key)"></textarea>
+                    <div class="interaccion">
+                        <img class="advertencia" src="./imagenes/advertencia.png" alt="advertencia">
+                        <input onclick="encriptar();" type="button" value="Encriptar" class="boton-encriptar">
+                        <input onclick="desencriptar();" type="button" value="Desencriptar" class="boton-desencriptar">
+                    </div>
+                </div>
+                <div class="consola">
+                    <div class="caja">
+                        <img class="muñeco" src="imagenes/Muñeco.png" alt="">
+                        <h2 class="aviso">Ningún mensaje fue encontrado</h2>
+                        <p class="aviso">Ingrese el texto que desees encriptar o desencriptar</p>
+                    </div>
+                    <p class="texto"></p>
+                    <input onclick="copiar();" type="button" value="Copiar" class="boton-copiar">
+                </div>
+            </section>
+        </main>
+
+
+        <script src="./app.js" defer></script>
+
+    </body>
+</html>
